@@ -8,16 +8,16 @@ public class PowerCalculator {
     System.out.println("Enter the base number: ");
     double base = scanner.nextDouble();
 
-    System.out.println("Enter the exponent: ");
-    double exponent = scanner.nextDouble();
+    System.out.println("Enter the exp: ");
+    double exp = scanner.nextDouble();
 
-    double power = calculatePower(base, exponent);
-    System.out.println("The power of " + base + " raised to" + exponent + " is " +power );
+    double power = calculatePower(base, exp);
+    System.out.println("The power of " + base + " raised to" + exp + " is " +power );
   }
 
-  private static double calculatePower(double base, double exponent) {
+  private static double calculatePower(double base, double exp) {
     double result = 1;
-    for (int i = 0; i < exponent; i++) {
+    for (int i = 0; i < exp; i++) {
       result *= base;
     }
     return result;
